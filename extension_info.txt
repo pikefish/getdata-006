@@ -7,22 +7,27 @@ The extended dataset contains the following new files:
 
 - 'projectVariables.txt': Subset of features (from 'features.txt') that participate in new analysis
 
-- 'average_values.txt': Data set that contains the average of each variable (from 'projectVariables.txt') for each activity (from 'activity_labels.txt') and each subject (combined from 'test/subject_test.txt' and 'train/subject_train.txt').
+- 'average_values.txt': Data set that contains the average of each variable (from 'projectVariables.txt') for each activity
+  (from 'activity_labels.txt') and each subject (combined from 'test/subject_test.txt' and 'train/subject_train.txt').
 
 
 Description of the file 'average_values.txt':
 ============================================
 
-'average_values.txt' stores observations for 68 variables in 68 columns.
+- 'average_values.txt' stores observations for 68 variables in 68 columns.
 
-Column 1 'Subject' identifies the subject who performed the activity. Its range is from 1 to 30. 
+- Column 1 'Subject' identifies the subject who performed the activity. Its range is from 1 to 30. 
 
-Column 2 'Activity' identifies the activity name. There are six possible activity names: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+- Column 2 'Activity' identifies the activity name. There are six possible activity names: WALKING, WALKING_UPSTAIRS,
+  WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 
-Columns 3-68 contain average values of variables defined in 'projectVariables.txt' for each subject and for each activity. Measurements for the analysis are taken from the original data sets 'test/X_test.txt' and 'train/X_train.txt'. Columns 3-68 are named according to the variable names as in 'projectVariables.txt'.
+- Columns 3-68 contain average values of variables defined in 'projectVariables.txt' for each subject and for each activity.
+  Measurements for the analysis are taken from the original data sets 'test/X_test.txt' and 'train/X_train.txt'. Columns 3-68 are named according to the variable names as in 'projectVariables.txt'.
 
 Notes:
 ======
 
-To improve the data set's readability, parentheses '()' and dash symbols '-' were removed from variable names while naming corresponding columns in 'average_values.txt'. Thus, the column name that corresponds to variable 'tBodyAcc-mean()-X' is 'tBodyAccmeanX' and so on.
+- To improve the data set's readability, parentheses '()' and dash symbols '-' were removed from variable names while
+naming corresponding columns in 'average_values.txt'. Thus, the column name that corresponds to variable
+'tBodyAcc-mean()-X' is 'tBodyAccmeanX' and so on.
 
